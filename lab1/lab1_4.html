@@ -31,11 +31,14 @@
 		Атрибут <code>srcset</code> задаёт путь к графическим файлам с учётом размера изображения и устройств.
 
 		</p>
-			 <img src="images/mushroom_retina.jpg" 
-			 		srcset="images/mushroom_portrait.jpg 350w,images/mushroom_landscape.jpg 650w" 
+		<picture>
+			<source srcset="images/mushroom_retina.jpg">
+			 <img src="images/mushroom_portrait.jpg"> 
+			 		
+			 <-- srcset="images/mushroom_portrait.jpg 350w,images/mushroom_landscape.jpg 650w" 
 			 		sizes="(max-width: 600px) 300px, (min-width: 600px) 300px" 
 			 		title="Грибочек, вроде как, зависимый от ориентации" 
-			 		alt="Грибочек, зависимый от ориентации">
+			 		alt="Грибочек, зависимый от ориентации"> -->
 		<h2>Подпись к изображению</h2>
 		<p>Для группирования любых элементов, например, изображений и подписей к ним используется элемент <code>figure</code>.
 		Он не должен быть связан непосредственно с основным содержимым документа и при его перемещении в другое место смысл текста не должен меняться. 
